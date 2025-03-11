@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Sing up </title>
+
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+ 
+
+<style>
+
+fieldset{
+   
+    margin:5% ;
+    border-color: white;
+}
+#container{
+    display: flex;  
+    justify-content: center;
+    align-items: center;
+  
+}
+.input-box {
+    margin: 10px 0;
+    width: 100%;
+    border-bottom: 2px solid  rgb(245, 238, 238);
+}
+.input-box input{
+
+    width: 95%;
+    height: 45px;
+    background: none;
+    border: none;
+    outline: none;
+    padding: 0 20px 0 5px;
+    font-size: 16px;
+}
+
+.checkbox{
+    display: flex;
+}
+
+.checkbox span {
+    color: rgb(255, 255, 255);
+    position: relative;
+    top: 10px;
+    font-weight: 400;
+}
+#btn{
+    color: white;
+    background:  rgb(151, 142, 132);
+    width: 100%;
+    height: 40px;
+    border-radius: 5px;
+    border: none;
+    font-size: 15px;
+    cursor: pointer;
+}
+
+h2{
+    color: rgb(233, 237, 240);
+    text-align: center;
+    font-size: 32px;
+}
+
+</style>
+    
+</head>
+<body>
+
+<!--Start nav -->
+
+<ul class="topnav" id="myTopnav">
+    <li><a  href="hom.html">Home </a></li>
+    <li><a href="Main dishes.html">Main dishes</a></li>
+    <li><a href="Side dishes.html">Side dishes</a></li>
+    <li><a href="drinks.html">Drinks</a></li>
+    <li><a href="Sweets.html">Sweets</a></li>
+    <li><a href="Members.html">Members</a></li>
+    <li><a href="Work hours.html"> Work hours</a></li>
+    <li><a href="contact us.html">contact us</a></li>
+    <li><a class="active" href="Sing up.html"><strong style="color:rgb(167, 115, 19);"> sing up</strong></a></li>
+    
+
+    <li class="icon"><a href="javascript:void(0);" onclick="myFunction()">
+    <i style="color:rgb(167, 115, 19);" class="fa fa-bars"></i></a> </li>
+  </ul>
+  <!--end Nav-->
+  
+  <script>
+    function myFunction() {
+      var x = document.getElementById("myTopnav");
+      if (x.className === "topnav") {
+        x.className += " responsive";
+      } else {
+        x.className = "topnav";
+      }
+    }
+    </script>
+
+  <!--Start form -->
+
+    <div id="container">
+        <form action="hom.html"  target="_blank">
+
+          <fieldset style="border-radius: 10px;" >
+
+            <h2>Sing up</h2>
+
+            <div class="input-box">
+
+              <label for="text">Username:</label>
+                <input type="text " id="text" name="text"  pattern="[A-Za-z]{3,}"  placeholder ="Enter a username 3 characters or more" required>
+
+            </div>
+
+            <div class="input-box">
+
+              <label for="email">Email:</label>
+                <input type="email" id="email" name="email" placeholder ="aaaaaa@gmail.com" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,3}$"  required>
+
+            </div>
+
+            <div class="input-box">
+
+              <label for="phone">Number phone:</label>
+                <input type="tel" id="phone" name="phone" pattern="[0-9]{12}" placeholder ="966500000000" required >
+            
+              </div>
+             
+            <div class="input-box">
+
+              <label  for="password">password:</label>
+                <input type="password" id="password" name="password" placeholder ="Enter a password 8 or more"  pattern=".{8,}" required >
+                
+            </div>
+            <div class="checkbox">
+
+              <input type="checkbox">
+              <span> You may receive offers ,news and updates from us. </span> <br>
+
+          </div>
+        <br>
+            <div>
+          
+                <button id="btn" type="submit"  value="Create acount">Create acount</button>
+            </div>
+
+            <br>
+            <div>
+              
+              <button id="btn"  type="reset"  value="Reset">Reset</button>
+              
+          </div> 
+          
+
+
+            <br>
+          </fieldset>
+
+        </form>
+    </div>
+
+<!--end form -->
+  
+  
+
+
+</body>
+</html>

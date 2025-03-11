@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Main dishes </title>
+  <link rel="stylesheet" href="style.css"> 
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+   
+
+<style>
+
+
+.div{
+   width: 50%;
+  height: 100%;
+  padding-left: 40%;
+  margin:3% 0 0 3%;
+  
+}
+
+
+</style>
+
+</head>
+<body>
+  <!--start Nav-->
+  <ul class="topnav" id="myTopnav">
+    <li><a  href="hom.html">Home </a></li>
+    <li><a  class="active" href="Main dishes.html">Main dishes</a></li>
+    <li><a href="side dishes.html">Side dishes</a></li>
+    <li><a href="Drinks.html">Drinks</a></li>
+    <li><a href="Sweets.html">Sweets</a></li>
+    <li><a href="Members.html">Members</a></li>
+    <li><a href="Work hours.html"> Work hours</a></li>
+    <li><a href="contact us.html">contact us</a></li>
+      <li><a href="Sing up.html"><strong style="color:rgb(167, 115, 19);"> sing up</strong></a></li>
+
+      <li class="icon"><a href="javascript:void(0);" onclick="myFunction()">
+      <i style="color:rgb(167, 115, 19);" class="fa fa-bars"></i></a> </li>
+</ul>
+<!--end Nav-->
+
+<script>
+  function myFunction() {
+    var x = document.getElementById("myTopnav");
+    if (x.className === "topnav") {
+      x.className += " responsive";
+    } else {
+      x.className = "topnav";
+    }
+  }
+  </script>
+
+
+<!--start menu-->
+
+
+<div class="div">
+<div>
+    <img class="img" src="Burger.jpg" alt="Burger">
+</div>
+  <span  class="Menutext">Burger 25-SR</span>
+ <br>
+<div >
+    <img class="img" src="pasta.jpg" alt="pasta">
+</div>
+  <span class="Menutext">pasta 35-SR</span>
+  
+<div>
+    <img class="img" src="pizza.jpg" alt="pizza">
+</div>
+  <span  class="Menutext">pizza 45-SR</span>
+</div>
+
+    <!--end menu-->
+</body>
+</html>
+
+  
+

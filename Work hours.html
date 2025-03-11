@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Work hours </title>
+
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+   
+
+<style>
+
+/* style table*/
+
+table, th, td {
+  border: 1px solid black;
+  border-collapse: collapse;
+}
+
+ table{
+  width: 35%;
+  float: right;
+  margin-top:10%;
+  margin-right: 30%;
+ }
+
+ th{
+  background-color: rgb(151, 142, 132);
+}
+ td{
+  background-color:white;
+  color: black;
+}
+ th,td {
+  text-align: center;
+  padding: 35px;
+  
+
+ }
+/*  end style table*/
+
+</style>
+</head>
+<body>
+
+<!--start Nav-->
+<ul class="topnav" id="myTopnav">
+  <li ><a  href="hom.html">Home </a></li>
+  <li ><a href="Main dishes.html">Main dishes</a></li>
+  <li ><a href="side dishes.html">Side dishes</a></li>
+  <li ><a href="Drinks.html">Drinkss</a></li>
+  <li ><a href="Sweets.html">Sweets</a></li>
+  <li ><a href="Members.html">Members</a></li>
+  <li ><a class="active" href="Work hours.html"> Work hours</a></li>
+  <li><a href="contact us.html">contact us</a></li>
+  <li><a href="Sing up.html"><strong style="color:rgb(167, 115, 19);"> sing up</strong></a></li>
+
+  <li class="icon"><a href="javascript:void(0);" onclick="myFunction()">
+  <i style="color:rgb(167, 115, 19);" class="fa fa-bars"></i></a> </li>
+</ul>
+<!--end Nav-->
+
+<script>
+  function myFunction() {
+    var x = document.getElementById("myTopnav");
+    if (x.className === "topnav") {
+      x.className += " responsive";
+    } else {
+      x.className = "topnav";
+    }
+  }
+  </script>
+
+<div class="content">
+<div class="text">
+  <!--start list-->
+    <h2 ><b>Closed</b> on :</h2>
+
+       <ol > 
+        <li >Saturday</li>
+        <li >Sunday</li>
+       </ol>
+
+<!--end list-->
+
+    
+    </div>
+    
+    
+    <!--start table-->
+    <div>
+    <table>
+      
+        <caption style="padding: 5px ;">WORK HOURS</caption>
+      
+      <tr>
+        <th> days </th>
+        <th> time </th>
+      </tr>
+      <tr>
+       <td>Weeks Days </td>
+       <td> 8:30 AM - 12:30 AM </td>
+      </tr>
+      <tr>
+        <td>Friday  </td>
+        <td> 12:00 PM - 2:00 AM  </td>
+      </tr>
+    </table>
+    <!--end table-->
+  </div>
+   </div>
+
+</body>
+</html>
+
+

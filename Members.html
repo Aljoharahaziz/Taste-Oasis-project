@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title> Members</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+
+
+
+.content2{
+    display:flex ;
+    align-items: center;
+    height: 70%;
+    width: 60%;
+    margin-left: 30px;
+    float: left;
+
+
+
+}
+.content2 .text ul {
+
+font-size: 18px;
+line-height: 20px;
+margin: 10px 0;
+letter-spacing: 1px;
+
+}
+.content2 .text h2 {
+    font-size: 40px;
+    text-transform: uppercase;
+    font-weight: 300;
+    letter-spacing: 2px;
+
+
+
+}
+
+
+
+</style> 
+</head>
+
+<body>
+  <!--start Nav-->
+  <ul class="topnav" id="myTopnav">
+        <li> <a href="hom.html">Home </a></li>
+        <li ><a href="Main dishes.html">Main dishes</a></li>
+        <li ><a href="side dishes.html">Side dishes</a></li>
+        <li ><a href="Drinks.html">Drinks</a></li>
+        <li ><a href="Sweets.html">Sweets</a></li>
+        <li ><a class="active" href="Members.html">Members</a></li>
+        <li ><a href="Work hours.html"> Work hours</a></li>
+        <li><a href="contact us.html">contact us</a></li>
+        <li><a href="Sing up.html"><strong style="color:rgb(167, 115, 19);"> sing up</strong></a></li>
+
+        <li class="icon"><a href="javascript:void(0);" onclick="myFunction()">
+        <i style="color:rgb(167, 115, 19);" class="fa fa-bars"></i></a> </li>
+      </ul>
+      <!--end Nav-->
+      
+      <script>
+        function myFunction() {
+          var x = document.getElementById("myTopnav");
+          if (x.className === "topnav") {
+            x.className += " responsive";
+          } else {
+            x.className = "topnav";
+          }
+        }
+        </script>
+
+      
+    
+
+      <div class="content2">
+       <div class="text">
+  <!--start list name -->
+    <h2 ><b>Members'</b>names:</h2>
+
+       <ul id="lists"> 
+        <li >Aljoharah Alotibi </li>
+        <li >Fahdah Alrashidi </li>
+        <li >Rahaf Alotibi </li>
+       </ul>
+    </div>
+    </div>
+  <!--end list name -->
+
+  <!-- start video -->
+
+  <div style="margin-top: 50px;">
+  <video width="350" height="400" controls>
+    <source src="video.mp4" type="video/mp4">
+  </video>
+</div>
+ 
+   <!-- end video --> 
+    
+ 
+ <!--random name -->
+
+    <script>
+        
+        const list=document.getElementById("lists");
+        const item=Array.from(list.children);
+        item.sort(()=>Math.random()-0.5);
+        list.innerHTML='';
+        item.forEach(item=>{list.appendChild(item)});
+       </script>
+
+       
+</body>
+</html>
